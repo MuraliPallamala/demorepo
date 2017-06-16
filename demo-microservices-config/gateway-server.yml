@@ -1,21 +1,21 @@
 server:
   port: 8765
-  ssl:
-    key-store: classpath:server.jks
-    key-store-password: password
-    key-password: password
+#  ssl:
+#    key-store: classpath:server.jks
+#    key-store-password: password
+#    key-password: password
     # Problem with trust-store properties?
     #
     # Instead use: java -Djavax.net.debug=ssl -Djavax.net.ssl.trustStore=src/main/resources/truststore.jks -Djavax.net.ssl.trustStorePassword=password -jar build/libs/*.jar
     #
     # trust-store: classpath:truststore.jks
-    trust-store: src/main/resources/truststore.jks
-    trust-store-password: password
+#    trust-store: src/main/resources/truststore.jks
+#    trust-store-password: password
 
-security:
-  oauth2:
-    resource:
-      userInfoUri: https://localhost:9999/uaa/user
+#security:
+#  oauth2:
+#    resource:
+#      userInfoUri: https://localhost:9999/uaa/user
 
 hystrix:
   threadpool:
